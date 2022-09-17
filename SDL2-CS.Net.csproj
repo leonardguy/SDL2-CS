@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>SDL2</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="gitlab-ci\**" />
+    <EmbeddedResource Remove="gitlab-ci\**" />
+    <None Remove="gitlab-ci\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove=".gitlab-ci.yml" />
+    <None Remove="app.config" />
+    <None Remove="LICENSE" />
+    <None Remove="Makefile" />
+    <None Remove="README" />
+  </ItemGroup>
+
+</Project>
